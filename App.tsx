@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { 
@@ -19,11 +18,11 @@ import {
 } from 'lucide-react';
 
 // Pages
-import Home from './pages/Home';
-import About from './pages/About';
-import Impact from './pages/Impact';
-import Team from './pages/Team';
-import Contact from './pages/Contact';
+import Home from './pages/Home.tsx';
+import About from './pages/About.tsx';
+import Impact from './pages/Impact.tsx';
+import Team from './pages/Team.tsx';
+import Contact from './pages/Contact.tsx';
 
 // Components
 const Navbar: React.FC = () => {

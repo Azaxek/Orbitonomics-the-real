@@ -1,4 +1,3 @@
-
 {
   "name": "orbitonomics",
   "version": "1.0.0",
@@ -10,7 +9,10 @@
     "recharts": "^3.6.0",
     "lucide-react": "^0.562.0"
   },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  },
   "scripts": {
-    "build": "echo 'Deploying from root directory...'"
+    "build": "mkdir -p build && cp index.html build/ && esbuild index.tsx --bundle --outfile=build/index.js --format=esm --minify --loader:.tsx=tsx --loader:.ts=ts --external:react --external:react-dom --external:react-router-dom --external:recharts --external:lucide-react"
   }
 }
