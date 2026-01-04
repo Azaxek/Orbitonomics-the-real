@@ -1,3 +1,4 @@
+
 {
   "name": "orbitonomics",
   "version": "1.0.0",
@@ -13,6 +14,6 @@
     "esbuild": "^0.24.0"
   },
   "scripts": {
-    "build": "mkdir -p build && cp index.html build/ && esbuild index.tsx --bundle --outfile=build/index.js --format=esm --minify --loader:.tsx=tsx --loader:.ts=ts --external:react --external:react-dom --external:react-router-dom --external:recharts --external:lucide-react"
+    "build": "mkdir -p build && cp index.html build/ && esbuild index.tsx --bundle --outfile=build/index.js --format=esm --minify --loader:.tsx=tsx --loader:.ts=ts --define:process.env.NODE_ENV='\"production\"'"
   }
 }
